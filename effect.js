@@ -232,8 +232,8 @@ $("document").ready(function () {
           $("p:nth-child(" + i + ")")
             .fadeIn("slow")
             .delay(1500);
-          if (i == 13) {
-            $("p:nth-child(12)")
+          if (i == 14) {
+            $("p:nth-child(13)")
               .fadeOut("slow")
               .promise()
               .done(function () {
