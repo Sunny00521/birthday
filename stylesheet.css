@@ -273,6 +273,7 @@ body {
     opacity: 1;
   }
 }
+
 .bulb-glow-blue {
   background-image: url("bulb_blue.png");
   -webkit-animation: bulb_glow_blue linear 5s;
@@ -768,6 +769,7 @@ body {
     background-image: url("bulb.png");
   }
 }
+
 .bulb-glow-green-after {
   background-image: url("bulb_green.png");
   -webkit-animation: bulb_glow_green_after linear 1.8s infinite;
@@ -833,6 +835,7 @@ body {
     background-image: url("bulb.png");
   }
 }
+
 .bulb-glow-pink-after {
   background-image: url("bulb_pink.png");
   -webkit-animation: bulb_glow_pink_after linear 2s infinite;
@@ -897,6 +900,7 @@ body {
     background-image: url("bulb.png");
   }
 }
+
 .bulb-glow-orange-after {
   background-image: url("bulb_orange.png");
   -webkit-animation: bulb_glow_orange_after linear 2.2s infinite;
@@ -961,6 +965,7 @@ body {
     background-image: url("bulb.png");
   }
 }
+
 audio {
   display: none;
 }
