@@ -1125,7 +1125,7 @@ audio {
 }
 
 @media screen and (max-width: 768px) {
-  #b4,
+  /* #b4,
   #b44 {
     background-image: url("b1.png") !important;
   }
@@ -1148,7 +1148,7 @@ audio {
   #b6,
   #b66 h2 {
     color: #d14d39 !important;
-  }
+  } */
 }
 .balloons-rotate-behaviour-one {
   -webkit-animation: balloons_rotate_one linear 10s infinite;
