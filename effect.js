@@ -7,13 +7,24 @@ $("document").ready(function () {
   $(window).resize(function () {
     vw = $(window).width() / 2;
     $("#b1,#b2,#b3,#b4,#b5,#b6,#b7").stop();
-    $("#b11").animate({ top: 240, left: vw - 350 }, 500);
-    $("#b22").animate({ top: 240, left: vw - 250 }, 500);
-    $("#b33").animate({ top: 240, left: vw - 150 }, 500);
-    $("#b44").animate({ top: 240, left: vw - 50 }, 500);
-    $("#b55").animate({ top: 240, left: vw + 50 }, 500);
-    $("#b66").animate({ top: 240, left: vw + 150 }, 500);
-    $("#b77").animate({ top: 240, left: vw + 250 }, 500);
+    if ($(window).width() < 768) {
+      var oneWidth = Math.ceil($(window).width() / 4);
+      $("#b11").animate({ top: 180, left: oneWidth / 2 }, 500);
+      $("#b22").animate({ top: 180, left: oneWidth * (3 / 2) }, 500);
+      $("#b33").animate({ top: 180, left: oneWidth * (5 / 2) }, 500);
+      $("#b44").animate({ top: 240, left: vw - oneWidth * 2 }, 500);
+      $("#b55").animate({ top: 240, left: vw - oneWidth }, 500);
+      $("#b66").animate({ top: 240, left: vw }, 500);
+      $("#b77").animate({ top: 240, left: vw + oneWidth }, 500);
+    } else {
+      $("#b11").animate({ top: 240, left: vw - 350 }, 500);
+      $("#b22").animate({ top: 240, left: vw - 250 }, 500);
+      $("#b33").animate({ top: 240, left: vw - 150 }, 500);
+      $("#b44").animate({ top: 240, left: vw - 50 }, 500);
+      $("#b55").animate({ top: 240, left: vw + 50 }, 500);
+      $("#b66").animate({ top: 240, left: vw + 150 }, 500);
+      $("#b77").animate({ top: 240, left: vw + 250 }, 500);
+    }
   });
 
   $("#turn_on").click(function () {
@@ -173,6 +184,9 @@ $("document").ready(function () {
     $("#b7").attr("id", "b77");
     if ($(window).width() < 768) {
       var oneWidth = Math.ceil($(window).width() / 4);
+      $("#b11").animate({ top: 180, left: oneWidth / 2 }, 500);
+      $("#b22").animate({ top: 180, left: oneWidth * (3 / 2) }, 500);
+      $("#b33").animate({ top: 180, left: oneWidth * (5 / 2) }, 500);
       $("#b44").animate({ top: 240, left: vw - oneWidth * 2 }, 500);
       $("#b55").animate({ top: 240, left: vw - oneWidth }, 500);
       $("#b66").animate({ top: 240, left: vw }, 500);
@@ -218,8 +232,8 @@ $("document").ready(function () {
           $("p:nth-child(" + i + ")")
             .fadeIn("slow")
             .delay(1500);
-          if (i == 21) {
-            $("p:nth-child(20)")
+          if (i == 13) {
+            $("p:nth-child(12)")
               .fadeOut("slow")
               .promise()
               .done(function () {

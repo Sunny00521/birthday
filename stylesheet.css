@@ -1123,15 +1123,15 @@ audio {
   #b44 {
     background-image: url("b1.png") !important;
   }
-	#b4,
+  #b4,
   #b44 h2 {
-		color: #F2B300 !important;
-	}
+    color: #f2b300 !important;
+  }
   #b5,
   #b55 {
     background-image: url("b2.png") !important;
   }
-	#b5,
+  #b5,
   #b55 h2 {
     color: #0719d4 !important;
   }
@@ -1139,7 +1139,7 @@ audio {
   #b66 {
     background-image: url("b3.png") !important;
   }
-	#b6,
+  #b6,
   #b66 h2 {
     color: #d14d39 !important;
   }
@@ -1342,3 +1342,8 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+
+button {
+  padding-bottom: constant(safe-area-inset-bottom); /*兼容 IOS<11.2*/
+  padding-bottom: env(safe-area-inset-bottom); /*兼容 IOS>11.2*/
+}
